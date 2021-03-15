@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block content %}
+{{ super () }}
+<ul class="list-group">
+    <li class="list-group-item">1:00 - {{day.am1}}</li>
+    <li class="list-group-item">2:00 - {{day.am2}}</li>
+    <li class="list-group-item">3:00 - {{day.am3}}</li>
+    <li class="list-group-item">4:00 - {{day.am4}}</li>
+    <li class="list-group-item">5:00 - {{day.am5}}</li>
+    <li class="list-group-item">6:00 - {{day.am6}}</li>
+    <li class="list-group-item">7:00 - {{day.am7}}</li>
+    <li class="list-group-item">8:00 - {{day.am8}}</li>
+    <li class="list-group-item">9:00 - {{day.am9}}</li>
+    <li class="list-group-item">10:00 - {{day.am10}}</li>
+    <li class="list-group-item">11:00 - {{day.am11}}</li>
+    <li class="list-group-item">12:00 - {{day.am12}}</li>
+    <li class="list-group-item">13:00 - {{day.pm1}}</li>
+    <li class="list-group-item">14:00 - {{day.pm2}}</li>
+    <li class="list-group-item">15:00 - {{day.pm3}}</li>
+    <li class="list-group-item">16:00 - {{day.pm4}}</li>
+    <li class="list-group-item">17:00 - {{day.pm5}}</li>
+    <li class="list-group-item">18:00 - {{day.pm6}}</li>
+    <li class="list-group-item">19:00 - {{day.pm7}}</li>
+    <li class="list-group-item">20:00 - {{day.pm8}}</li>
+    <li class="list-group-item">21:00 - {{day.pm9}}</li>
+    <li class="list-group-item">22:00 - {{day.pm10}}</li>
+    <li class="list-group-item">23:00 - {{day.pm11}}</li>
+    <li class="list-group-item">24:00 - {{day.pm12}}</li>
+
+    <a class="btn btn-primary" href="{{ url_for('change', name=current_user.name)}}" role="button">Изменить</a>
+</ul>
+{% endblock %}

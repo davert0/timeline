@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block content %}
+{% for cat, msg in get_flashed_messages(True) %}
+<div class = "flash {{cat}}">{{msg}}</div>
+{% endfor %}
+<h1>Hello, {{name}}</h1>
+<form action="" method="post" class="form-contact">
+    {{ form.hidden_tag() }}
+    {{ wtf.form_field(form.am1) }}
+    {{ wtf.form_field(form.am2) }}
+    {{ wtf.form_field(form.am3) }}
+    {{ wtf.form_field(form.am4) }}
+    {{ wtf.form_field(form.am5) }}
+    {{ wtf.form_field(form.am6) }}
+    {{ wtf.form_field(form.am7) }}
+    {{ wtf.form_field(form.am8) }}
+    {{ wtf.form_field(form.am9) }}
+    {{ wtf.form_field(form.am10) }}
+    {{ wtf.form_field(form.am11) }}
+    {{ wtf.form_field(form.am12) }}
+    {{ wtf.form_field(form.pm1) }}
+    {{ wtf.form_field(form.pm2) }}
+    {{ wtf.form_field(form.pm3) }}
+    {{ wtf.form_field(form.pm4) }}
+    {{ wtf.form_field(form.pm5) }}
+    {{ wtf.form_field(form.pm6) }}
+    {{ wtf.form_field(form.pm7) }}
+    {{ wtf.form_field(form.pm8) }}
+    {{ wtf.form_field(form.pm9) }}
+    {{ wtf.form_field(form.pm10) }}
+    {{ wtf.form_field(form.pm11) }}
+    {{ wtf.form_field(form.pm12) }}
+
+
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Сохранить</button>
+</form>
+{% endblock %}
